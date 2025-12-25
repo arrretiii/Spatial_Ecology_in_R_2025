@@ -1,0 +1,37 @@
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+
+# 1. Load the data
+data <- read.csv("volcano_vegetation_clean.csv")
+
+# 2. Pre-processing
+data$date <- as.Date(data$date)
+data$location <- paste(data$latitude, data$longitude, sep=", ")
+
+# Filter out poor quality data (cloudy pixels) to see the true volcanic effect
+clean_data <- data %>%
+  filter(quality_description == "VI produced with good quality")
+
+# 3. Create the Visualization
+ggplot(clean_data, aes(x = date, y = ndvi, color = location, group = location)) +
+  # Add points for each observation
+  geom_point(size = 2, alpha = 0.6) +
+  # Add a smooth line to see the trend despite seasonal noise
+  geom_smooth(method = "loess", se = FALSE, size = 1.2) +
+  # Customizing the look
+  theme_minimal() +
+  labs(
+    title = "Vegetation Health (NDVI) Near Volcanic Fumaroles",
+    subtitle = "Comparing different coordinates to identify volcanic stress zones",
+    x = "Date",
+    y = "NDVI (Vegetation Greenness)",
+    color = "Coordinates (Lat, Lon)"
+  ) +
+  theme(legend.position = "bottom") +
+  # Scale Y to show standard NDVI range
+  ylim(0, 1)
+
+# 4. Analysis Note
+# Locations with consistently lower NDVI lines are likely closer to 
+# active fumaroles where gas emissions inhibit plant growth.
