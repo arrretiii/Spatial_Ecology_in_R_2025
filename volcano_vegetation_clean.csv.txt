@@ -1,0 +1,70 @@
+latitude,longitude,date,ndvi,quality_description
+4.85,-75.28,2024-12-18,0.4858,"VI produced, but check other QA"
+4.85,-75.28,2025-01-01,0.607,VI produced with good quality
+4.85,-75.28,2025-01-17,0.5218,VI produced with good quality
+4.85,-75.28,2025-02-02,0.282,"Pixel produced, but most probably cloudy"
+4.85,-75.28,2025-02-18,0.2466,"Pixel produced, but most probably cloudy"
+4.85,-75.28,2025-03-06,0.1303,"Pixel produced, but most probably cloudy"
+4.85,-75.28,2025-03-22,0.5268,VI produced with good quality
+4.85,-75.28,2025-04-07,0.5684,VI produced with good quality
+4.85,-75.28,2025-04-23,0.0654,"Pixel produced, but most probably cloudy"
+4.85,-75.28,2025-05-09,0.3705,VI produced with good quality
+4.85,-75.28,2025-05-25,0.4554,VI produced with good quality
+4.85,-75.28,2025-06-10,0.5264,VI produced with good quality
+4.85,-75.28,2025-06-26,0.5401,VI produced with good quality
+4.85,-75.28,2025-07-12,0.5255,VI produced with good quality
+4.85,-75.28,2025-07-28,0.5615,VI produced with good quality
+4.85,-75.28,2025-08-13,0.5606,VI produced with good quality
+4.85,-75.28,2025-08-29,0.5147,VI produced with good quality
+4.85,-75.28,2025-09-14,0.1171,"Pixel produced, but most probably cloudy"
+4.85,-75.28,2025-09-30,0.1581,"Pixel produced, but most probably cloudy"
+4.85,-75.28,2025-10-16,0.505,VI produced with good quality
+4.85,-75.28,2025-11-01,0.5847,VI produced with good quality
+4.85,-75.28,2025-11-17,0.5463,VI produced with good quality
+4.85,-75.28,2025-12-03,0.5148,VI produced with good quality
+4.885,-75.31,2024-12-18,0.149,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-01-01,0.472,VI produced with good quality
+4.885,-75.31,2025-01-17,0.3951,VI produced with good quality
+4.885,-75.31,2025-02-02,0.1388,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-02-18,0.1118,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-03-06,0.0634,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-03-22,0.3546,VI produced with good quality
+4.885,-75.31,2025-04-07,0.3168,VI produced with good quality
+4.885,-75.31,2025-04-23,0.0163,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-05-09,0.3421,VI produced with good quality
+4.885,-75.31,2025-05-25,0.3551,VI produced with good quality
+4.885,-75.31,2025-06-10,0.4035,VI produced with good quality
+4.885,-75.31,2025-06-26,0.4042,VI produced with good quality
+4.885,-75.31,2025-07-12,0.401,VI produced with good quality
+4.885,-75.31,2025-07-28,0.4578,VI produced with good quality
+4.885,-75.31,2025-08-13,0.4542,VI produced with good quality
+4.885,-75.31,2025-08-29,0.4132,VI produced with good quality
+4.885,-75.31,2025-09-14,0.0543,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-09-30,0.0768,"Pixel produced, but most probably cloudy"
+4.885,-75.31,2025-10-16,0.3591,VI produced with good quality
+4.885,-75.31,2025-11-01,0.4284,VI produced with good quality
+4.885,-75.31,2025-11-17,0.4433,VI produced with good quality
+4.885,-75.31,2025-12-03,0.435,VI produced with good quality
+4.892,-75.324,2024-12-18,0.057,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-01-01,0.2227,VI produced with good quality
+4.892,-75.324,2025-01-17,0.1803,VI produced with good quality
+4.892,-75.324,2025-02-02,0.0278,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-02-18,0.0125,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-03-06,0.0039,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-03-22,0.1384,VI produced with good quality
+4.892,-75.324,2025-04-07,0.1345,VI produced with good quality
+4.892,-75.324,2025-04-23,0.0076,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-05-09,0.1444,VI produced with good quality
+4.892,-75.324,2025-05-25,0.1555,VI produced with good quality
+4.892,-75.324,2025-06-10,0.1764,VI produced with good quality
+4.892,-75.324,2025-06-26,0.1706,VI produced with good quality
+4.892,-75.324,2025-07-12,0.1818,VI produced with good quality
+4.892,-75.324,2025-07-28,0.1982,VI produced with good quality
+4.892,-75.324,2025-08-13,0.1979,VI produced with good quality
+4.892,-75.324,2025-08-29,0.1793,VI produced with good quality
+4.892,-75.324,2025-09-14,0.0047,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-09-30,0.0054,"Pixel produced, but most probably cloudy"
+4.892,-75.324,2025-10-16,0.145,VI produced with good quality
+4.892,-75.324,2025-11-01,0.1895,VI produced with good quality
+4.892,-75.324,2025-11-17,0.1973,VI produced with good quality
+4.892,-75.324,2025-12-03,0.1868,VI produced with good quality
