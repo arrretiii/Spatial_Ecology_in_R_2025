@@ -1,0 +1,43 @@
+# 1. DATA ACQUISITION & PRE-PROCESSING
+# Loading the cleaned MODIS NDVI dataset (250m resolution)
+veg_data <- read.csv("volcano_vegetation_clean.csv")
+veg_data$date <- as.Date(veg_data$date)
+veg_data$site <- as.factor(veg_data$latitude) # Use latitude as a proxy for site location
+
+# 2. QUALITY CONTROL (Filtering Noise)
+# Similar to the 'Seasonal Phase' filtering in the presentation, 
+# we remove cloudy pixels to prevent signal distortion.
+veg_clean <- veg_data %>% 
+  filter(quality_description == "VI produced with good quality")
+
+# 3. STATISTICAL ANALYSIS (ANOVA)
+# Testing if there is a significant difference in NDVI between the 3 sites
+# This mimics the "Statistical Analysis" slide (p-values)
+fit <- aov(ndvi ~ site, data = veg_clean)
+stat_summary <- summary(fit)
+print(stat_summary)
+
+# 4. VISUALIZATION: NDVI DENSITY DISTRIBUTION
+# Comparing the "health profile" of each site
+dist_plot <- ggplot(veg_clean, aes(x = ndvi, fill = site)) +
+  geom_density(alpha = 0.5) +
+  scale_fill_viridis_d(name = "Site (Lat)") +
+  theme_minimal() +
+  labs(title = "Density Distribution of NDVI per Site",
+       subtitle = "Analysis of vegetation stress near volcanic vents",
+       x = "NDVI (Greenness Index)", y = "Density")
+
+# 5. VISUALIZATION: TEMPORAL DYNAMICS
+# Tracking the impact over the 2024-2025 period
+trend_plot <- ggplot(veg_clean, aes(x = date, y = ndvi, color = site)) +
+  geom_line(size = 0.8, alpha = 0.4) +
+  geom_smooth(method = "loess", span = 0.4, se = FALSE) +
+  theme_bw() +
+  labs(title = "Seasonal NDVI Dynamics",
+       subtitle = "Monitoring fumarole-induced stress cycles",
+       x = "Timeline", y = "NDVI Value") +
+  facet_wrap(~site)
+
+# Displaying the results
+print(dist_plot)
+print(trend_plot)
