@@ -1,0 +1,14 @@
+---
+title: "Spatial Analysis of Vegetation Dynamics Near Nevado del Ruiz (Colombia): An NDVI-Based Assessment"
+author: "Areti Angeli"
+date: "`04.02.2026`"
+output: html_document
+---
+
+# Introduction
+Volcanic environments are among the most dynamic and extreme ecosystems on Earth. Beyond the immediate threat of eruptions, volcanic systems exert continuous pressure on surrounding vegetation through fumarolic activity. These vents release a cocktail of volcanic gases (such as $CO_2$, $SO_2$, and $H_2S$) and create localized soil thermal anomalies that can significantly alter plant physiology and growth patterns.
+
+Understanding how these emissions affect "greenness" is vital for monitoring both volcanic health and ecological resilience. The Normalized Difference Vegetation Index (NDVI) serves as a reliable proxy for photosynthetic activity and canopy density. By analyzing NDVI trends in high-stress zones (near active vents) versus distal control areas, we can quantify the footprint of volcanic degassing on the landscape.
+
+<img width="1300" height="768" alt="image" src="https___cloudfront-us-east-1.images.arcpublishing.com_prisaradioco_TOSVRHTG6REFVKISX5LI67YJAE.jpg" />
+
